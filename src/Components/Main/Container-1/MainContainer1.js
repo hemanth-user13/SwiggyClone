@@ -77,6 +77,9 @@ function MainContainer1() {
     }, [])
     return (
         <div>
+             <h2 className="text-left  text-2xl">
+             <b>What's on your mind?</b>
+             </h2>
             <Items itemdata={itemdata}/>
 
         </div>
