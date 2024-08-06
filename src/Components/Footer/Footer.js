@@ -23,7 +23,7 @@ function Footer() {
                 <ul class="text-gray-600 dark:text-gray-400">
                   <li class="mb-4">
                     <a href="https://flowbite.com" class="hover:underline">
-                      Flowbite
+                      Test Data
                     </a>
                   </li>
                   <li>

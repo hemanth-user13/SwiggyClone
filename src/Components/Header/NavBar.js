@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Image from "../../assests/logo.png";
-import { CiSearch } from "react-icons/ci";
-
+import { FaSearch } from "react-icons/fa";
 function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
