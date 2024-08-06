@@ -1,10 +1,20 @@
 import "./App.css";
-import Main from "./Main";
+import Clone from './Main';
+import Search from "./Components/Header/Searchitems";
+import Offers from './Components/Header/Offers'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <Main />
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Clone />} />
+          <Route path="/search" element={<Search />} />
+          <Route path="/offers" element={<Offers />} />
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

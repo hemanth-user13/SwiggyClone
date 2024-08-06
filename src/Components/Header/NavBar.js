@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Image from "../../assests/logo.png";
+import {Link} from 'react-router-dom'
 import { FaSearch } from "react-icons/fa";
 function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
@@ -65,24 +66,25 @@ function Header() {
               <div className="hidden sm:ml-auto sm:block">
                 <div className="flex space-x-4 justify-center">
                   <a
-                    href="#"
+                    href="/"
                     className="rounded-md bg-white px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
                     aria-current="page"
                   >
                     Swiggy Corporate
                   </a>
 
-                  <a
+                 <a
                     href="#"
                     className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
                   >
-                    Search
+                   
+                 <Link to="/search"> Search</Link> 
                   </a>
                   <a
                     href="#"
                     className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
                   >
-                    Offers
+                    <Link to="/offers">Offers</Link>
                   </a>
                   <a
                     href="#"

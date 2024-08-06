@@ -10,14 +10,11 @@ function MainContent() {
   return (
     <div className="outer-container">
       <div className="container">
-        <h2 className="text-left  text-2xl">
-          <b>What's on your mind?</b>
-          <Container1/>
-        </h2>
+        <Container1 />
         <Container2 />
-        <Container3/>
-        <Container4/>
-        <Container5/>
+        <Container3 />
+        <Container4 />
+        <Container5 />
       </div>
     </div>
   );
