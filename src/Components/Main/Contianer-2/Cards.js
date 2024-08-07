@@ -9,7 +9,7 @@ function CustomPrevArrow(props) {
     return (
         <div 
             className={className} 
-            style={{ ...style, display: 'block', position: 'absolute', top: '-55px', left: '1350px', zIndex: 1 }}
+            style={{ ...style, display: 'block', position: 'absolute', top: '-55px', left: '1400px', zIndex: 1 }}
             onClick={onClick}
         >
             <FaArrowLeft style={{ color: 'black', fontSize: '30px' }} />
@@ -22,7 +22,7 @@ function CustomNextArrow(props) {
     return (
         <div 
             className={className} 
-            style={{ ...style, display: 'block', position: 'absolute', top: '-55px', right: '10px', zIndex: 1 }}
+            style={{ ...style, display: 'block', position: 'absolute', top: '-55px', right: '16px', zIndex: 1 }}
             onClick={onClick}
         >
             <FaArrowRight style={{ color: 'black', fontSize: '30px' }} />

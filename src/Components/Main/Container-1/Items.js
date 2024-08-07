@@ -10,7 +10,7 @@ function CustomPrevArrow(props) {
     return (
         <div 
             className={className} 
-            style={{ ...style, display: 'block', position: 'absolute', top: '10px', left: '1350px', zIndex: 1 }}
+            style={{ ...style, display: 'block', position: 'absolute', top: '10px', left: '1370px', zIndex: 1 }}
             onClick={onClick}
         >
             <FaArrowLeft style={{ color: 'black', fontSize: '30px' }} />
