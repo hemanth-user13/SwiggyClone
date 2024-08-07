@@ -56,8 +56,8 @@ function TypeMain() {
     const getData = () => {
         try {
             const respsonse = [...data]
-            console.log("the data function is here")
-            console.log(respsonse)
+            // console.log("the data function is here")
+            // console.log(respsonse)
             setData(respsonse)
             setError(false)
         } catch (error) {

@@ -65,7 +65,7 @@ function MainContainer1() {
     const getData = () => {
         try {
             const response = [...data];
-            console.log(response);
+            // console.log(response);
             setItemData(response)
         } catch (error) {
             console.log("there is an error in the code",error)
