@@ -1,7 +1,10 @@
 import React, { useState } from "react";
 import Image from "../../assests/logo.png";
-import {Link} from 'react-router-dom'
-import { FaSearch } from "react-icons/fa";
+import Signup from '../Accounts/Login'
+import { Link } from 'react-router-dom';
+import Other from '../Locations/Other'
+
+
 function Header() {
   const [isDropdownOpen, setDropdownOpen] = useState(false);
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -62,9 +65,12 @@ function Header() {
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex flex-shrink-0 items-center">
                 <img className="h-12 w-20" src={Image} alt="Your Company" />
+                <Other/>
               </div>
+
               <div className="hidden sm:ml-auto sm:block">
                 <div className="flex space-x-4 justify-center">
+                  <Link to='/'>
                   <a
                     href="/"
                     className="rounded-md bg-white px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
@@ -72,38 +78,48 @@ function Header() {
                   >
                     Swiggy Corporate
                   </a>
+                  </Link>
+                  <Link to="/search">
+                    <a
+                      href="#"
+                      className="rounded-md  px-3 py-2 text-sm font-medium text-black hover:bg-gray-200" style={{marginBottom:"400px"}}
+                    >
 
+                      Search
+                    </a>
+                  </Link>
+                  <Link to="/offers">
+                    <a
+                      href="#"
+                      className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
+                    >
+                      Offers
+                    </a>
+                  </Link>
+                 <Link to='/'>
                  <a
-                    href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
-                  >
-                   
-                 <Link to="/search"> Search</Link> 
-                  </a>
-                  <a
-                    href="#"
-                    className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
-                  >
-                    <Link to="/offers">Offers</Link>
-                  </a>
-                  <a
                     href="#"
                     className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
                   >
                     Help
                   </a>
-                  <a
+                 </Link>
+                 <Link to='/'>
+                 {/* <a
                     href="#"
                     className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
-                  >
-                    Sign In
-                  </a>
-                  <a
+                  > */}
+                   <Signup/>
+                  {/* </a> */}
+                 </Link>
+                 <Link to='/'>
+                 <a
                     href="#"
                     className="rounded-md px-3 py-2 text-sm font-medium text-black hover:bg-gray-200"
                   >
                     Cart
                   </a>
+                 </Link>
                 </div>
               </div>
             </div>
