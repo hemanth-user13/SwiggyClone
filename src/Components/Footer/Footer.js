@@ -195,7 +195,7 @@ function FooterCard() {
   return (
     <div className="flex flex-row justify-end bg-teal-200 " style={{paddingTop:"60px"}}>
     <h4 className=" ml-40 mr-40 text-3xl ">
-    For better experience,download the Swiggy Clone app now
+    For better experience, download the Swiggy Clone app now
     </h4>
       {data.map((item,index)=>(
         
